@@ -1,14 +1,6 @@
-# AWS–New Relic Highly Configurable Terraform Integration
+# AWS–New Relic Configurable Terraform Integration Example
 
-This module provisions all AWS and New Relic resources for a highly configurable integration, supporting both PUSH and PULL modes, with flexible metric filters and resource naming.
-
----
-
-## Features
-- Supports both **PUSH** and **PULL** integration modes
-- Highly configurable via variables and `.tfvars` files
-- Uses best practices for secrets and sensitive data
-- Outputs all important resource identifiers
+This module provisions all AWS and New Relic resources for a highly configurable integration, with flexible metric filters and resource naming.
 
 ---
 
@@ -63,7 +55,7 @@ cat tfplan.txt
 
 ## Notes
 - The `newrelic_api_key` must be a **User API key** (starts with `NRAK-`).
-- The `newrelic_ingest_license_key` must be a **New Relic Ingest License key** (starts with `NRAA-` or `LICENSE-`).
+- The `newrelic_ingest_license_key` must be a **New Relic Ingest License key**.
 - If you see errors about an AWS account already being linked, you must remove the existing integration in the New Relic UI or import it into Terraform.
 - All state, plan, and secret files are ignored by `.gitignore`.
 
