@@ -1,0 +1,19 @@
+# Ignore Terraform state and sensitive files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Ignore variable files with secrets
+terraform.tfvars
+*.tfvars
+
+# Ignore plan output
+*.out
+*.plan
+*.txt
+
+# Ignore editor/project files
+.vscode/
+.idea/
+.DS_Store

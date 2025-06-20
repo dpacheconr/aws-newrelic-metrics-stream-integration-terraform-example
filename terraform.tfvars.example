@@ -1,0 +1,10 @@
+# Example tfvars for AWS–New Relic integration
+aws_region              = "us-east-1"
+newrelic_account_id     = "YOUR_NR_ACCOUNT_ID"
+newrelic_account_region = "US"
+newrelic_api_key        = "YOUR_NEWRELIC_LICENSE_KEY"
+newrelic_ingest_license_key = "YOUR_NEWRELIC_INGEST_LICENSE_KEY"
+name                    = "my-integration"
+integration_mode        = "PUSH"
+include_metric_filters  = { "AWS/EC2" = ["CPUUtilization"] }
+exclude_metric_filters  = {}
